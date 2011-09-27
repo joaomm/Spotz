@@ -1,0 +1,15 @@
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/
+.sass-cache/
+db/database.yml
+vendor/cache/*
+capybara-*
+*.swp
+*.DS_Store
+public/ckeditor_assets/*
+public/system/*
+config/database.yml
+REVISION
+db/dumps

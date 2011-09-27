@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @act.name
+
+= link_to 'Edit', edit_act_path(@act)
+\|
+= link_to 'Back', acts_path

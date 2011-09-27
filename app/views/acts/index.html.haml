@@ -1,0 +1,19 @@
+%h1 Listing acts
+
+%table
+  %tr
+    %th Name
+    %th
+    %th
+    %th
+
+  - @acts.each do |act|
+    %tr
+      %td= act.name
+      %td= link_to 'Show', act
+      %td= link_to 'Edit', edit_act_path(act)
+      %td= link_to 'Destroy', act, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Act', new_act_path

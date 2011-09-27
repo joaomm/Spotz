@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b User:
+  = @activity.user
+%p
+  %b Act:
+  = @activity.act
+%p
+  %b Location:
+  = @activity.location
+
+= link_to 'Edit', edit_activity_path(@activity)
+\|
+= link_to 'Back', activities_path
