@@ -7,3 +7,12 @@
 = link_to 'Edit', edit_location_path(@location)
 \|
 = link_to 'Back', locations_path
+%br
+Address for
+= @location.address
+%br
+@
+=@location.latitude
+X
+= @location.longitude
+= gmaps4rails(@json)

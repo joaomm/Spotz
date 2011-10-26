@@ -1,0 +1,7 @@
+development:    
+  adapter: sqlite3
+  database: spotz_db_dev
+  
+test:    
+  adapter: sqlite3
+  database: spotz_db_test
